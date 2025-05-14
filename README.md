@@ -161,7 +161,7 @@ Detect Twitch/Tremor: frequency analysis, anomaly scores, pattern recognition
 ---
 
 
-###  4th Approach: NLP + Symbolic Motion Reasoning
+### 🟡 4th Approach: NLP + Symbolic Motion Reasoning
 
 ####  Overview:
 
@@ -245,7 +245,7 @@ Use contrastive learning (like CLIP) to align:
   * `"tremor in right wrist"`
   * `"twitching in left hand"`
 
-##### 🛠 Architecture:
+#####  Architecture:
 
 * **Motion Encoder**: PointNet++, 3D ResNet, voxelized ViT
 * **Text Encoder**: BERT, TinyBERT, or DistilBERT
@@ -284,7 +284,7 @@ clip_model.train(motion_clips, text_descriptions)
 
 ---
 
-### 🔍 Summary:
+###  Summary:
 
 | Task                       | Options / Tools                       |
 | -------------------------- | ------------------------------------- |
