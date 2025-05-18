@@ -45,11 +45,14 @@ Build Temporal Trajectories (Pos, Vel, Acc, Flow)
    ↓
 Detect Twitch/Tremor: frequency analysis, anomaly scores, pattern recognition
 ```
-
+#### Keypoints Estimation:
+* [3D Human Keypoints Estimation from Point Clouds in the Wild
+without Human Labels](https://arxiv.org/pdf/2306.04745)
+  
 #### Scene Flow Estimation Resources:
 
 * [PointPWC-Net GitHub](https://github.com/DylanWusee/PointPWC)
-* [FlowNet3D](https://github.com/xingyul/flownet3d)
+* [FlowNet3D](https://github.com/xingyul/flownet3d) 
 
 #### Feature Engineering:
 
