@@ -1,3 +1,30 @@
+# Segement Human pcd data
+1. Extact pcd frames and rgb frames from your rosbag and save them in a directory.
+2. Select any pcd frame and respective rgb frame.
+3. Plug their paths into run_to_check_params.py and run
+   ```bash
+   python run_to_check_params.py \
+    --pcd_path ply_frames/frame_00077.ply \
+    --rgb_path rgb_frames/frame_00077.png \
+    --output_pcd human_cluster.pcd \
+    --max_depth 4.0 \
+    --box_shift_x -200 \
+    --pad 70
+4. pcd and rgb image will be visualized, **change max_depth , box_shift_x , pad** manually as per your needs to get the human segmented out pcd frame.
+5. Use these params (max_depth , box_shift_x , pad) and your pcd folder directory to run
+   ```bash
+   python segment_human_pcd_using_yolo.py \
+    --ply_dir ply_frames \
+    --rgb_dir rgb_frames \
+    --out_dir human_frames \
+    --max_depth 4.0 \
+    --box_shift_x -200 \
+    --pad 70
+
+   ```
+6. Segmented out human pcd frames will be saved in your output directory.
+---
+#   ROUGH DRAFT
 # Motor-Alertness-pcd
 
 Detecting twitching and tremoring in point cloud human representations. This README outlines the complete innovation and development pipeline.
