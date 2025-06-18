@@ -94,7 +94,7 @@ for ply_path in sorted(glob(os.path.join(args.ply_dir, "frame_*.ply"))):
     pcd_out_path = os.path.join(args.out_dir, f"frame_{frame_id}_human.pcd")
     o3d.io.write_point_cloud(pcd_out_path, human_pcd)
 
-    # Optional debug image (commented out as in original)
+    # Optional debug image
     # dbg_img = rgb_img.copy()
     # cv2.rectangle(dbg_img, (x1, y1), (x2, y2), (0, 255, 0), 2)
     # img_out_path = os.path.join(args.out_dir, f"frame_{frame_id}_bbox.png")
